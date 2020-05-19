@@ -9,16 +9,134 @@ html {
 
 body {
     margin: 0;
+    background-color: rgb(245, 231, 201);
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+img {
+    width: auto;
+    height: 100%;
 }
 
 #navbar {
     height: 100%;
+    width: 450px;
     top: 0;
     left: 0;
     position: fixed;
-    border-right: 2px solid gray;
+    border-right: 7px solid rgb(168, 99, 53);
+    text-align: center;
+}
+
+#navbar h1 {
+    border-bottom: 3px solid rgb(168, 99, 53);
+    margin: 0;
+    padding: 30px;
+    font-size: 28px;
+    background-color: rgb(226, 211, 178);
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#navbar li {
+    border-bottom: 3px solid rgb(168, 99, 53);
+    padding: 30px 40px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+}
+
+#navbar li:hover {
+    background-color: rgb(218, 203, 170);
+    cursor: pointer;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 #main-doc {
-    margin-left: 300px;
+    margin-left: 470px;
+    margin-right: 10px;
+}
+
+#main-doc h2 {
+    background-color: rgb(226, 211, 178);
+    padding: 10px;
+    font-size: 28px;
+}
+
+#main-doc p {
+    font-size: 18px;
+}
+
+#hearthstone-board {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#hearthstone-board-img {
+    border: 3px solid rgb(168, 99, 53);
+    height: 100%;
+}
+
+#board-interface {
+    flex-basis: 30%;
+    height: 569px;
+    overflow-y: scroll;
+    background-color: rgb(65, 27, 18);
+    border: 3px solid rgb(168, 99, 53);
+    color: white;
+    list-style-position: inside;
+    list-style-type: square;
+    padding: 5px;
+    margin: 0;
+    font-size: 14px;
+}
+
+#board-interface li {
+    padding: 8px;
+}
+
+#card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Playing_Hearthstone img {
+    border: 3px solid rgb(168, 99, 53);
+    height: 100%;
+    align-self: center;
+}
+
+div.turn-phase-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+div.turn-phase-description {
+    color: white;
+    align-self: center;
+    flex-basis: 30%;
+    background-color: rgb(65, 27, 18);
+    border: 3px solid rgb(168, 99, 53);
+    border-radius: 25px;
+    margin-right: 10px;
+    height: 375px;
+    padding: 13px;
 }

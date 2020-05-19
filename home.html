@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://lh3.googleusercontent.com/proxy/HUDuy36PflFWpg_2ePx11iqbW3YLGjzRfZAoTb1SJdQ11x0TdcwW83-QqLiWzIwA6xKPdM3hwybAshJlk8ZNgQyxJ737EnYyi0xi3YgwkstHFfvOnWmo_nFjqcvkJ0WyQq-1rA" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
     <title>How to Play Hearthstone</title>
 </head>
 <body>
@@ -66,41 +70,6 @@
             <header>
                 <h2>Hearthstone Basics</h2>
             </header>
-            <div id="hearthstone-board">
-                <ul id="board-interface">
-                    <li>
-                        Your Hand
-                    </li>
-                    <li>
-                        Your Hero
-                    </li>
-                    <li>
-                        Your Hero Power
-                    </li>
-                    <li>
-                        Your Mana Crystals
-                    </li>
-                    <li>
-                        Your Weapon
-                    </li>
-                    <li>
-                        A Minion
-                    </li>
-                    <li>
-                        Your Opponent
-                    </li>
-                    <li>
-                        Your Deck
-                    </li>
-                    <li>
-                        Turn History
-                    </li>
-                </ul>
-
-                <code>
-                    <img src="https://gamepedia.cursecdn.com/hearthstone_gamepedia/thumb/1/1c/Battlefield_-_Goblins_vs_Gnomes.jpg/900px-Battlefield_-_Goblins_vs_Gnomes.jpg?version=17a09427dc7418e9f01e3afcb6596be2" alt="A typical Hearthstone board" id="hearthstone-board-img">
-                </code>
-            </div>
 
             <p>
                 Hearthstone is a one-versus-one game where you must take the health of your opponent down from 30 to 0 in order to win. Attacking them directly with units on the board or spells will reduce their health, but some characters and cards can heal them back up. Each player takes a turn to draw a card from their deck into their hand, play any cards they wish and then attack the opponent directly or the minions they have on the board.
@@ -111,16 +80,76 @@
             <p>
                 As you progress in your abilities you'll head into the world of deck building, where you can select the cards you want to play with in each match. With thousands of cards to choose from and unlock you could be one amazing deck away from a run at the top level of play and it's discovering new strategies that makes Hearthstone’s deck building so fun.
             </p>
+
+            <div id="hearthstone-board">
+                <ul id="board-interface">
+                    <li>
+                        <strong>Your Hand</strong> 
+                        <br> 
+                        <br>
+                        You draw a card from your deck and add it to your hand each turn. Cards with a glowing green border can be played, while cards without it either require more mana or some other condition to be met.
+                    </li>
+                    <li>
+                        <strong>Your Hero</strong> 
+                        <br> 
+                        <br>
+                        At the bottom right of your portrait is your current health; it diminishes as you take damage from minions and spells, and refills from healing spells. If it drops to zero, you lose.
+                    </li>
+                    <li>
+                        <strong>Your Hero Power</strong> 
+                        <br> 
+                        <br>
+                        Every hero has a unique power they can use once each turn. Warriors for example can add armor to their health, Shamans can summon totems, and Rogues can pull daggers seemingly out of nowhere.
+                    </li>
+                    <li>
+                        <strong>Your Mana Crystals</strong> 
+                        <br> 
+                        <br>
+                        Each card you play costs a certain amount of mana. Your mana replenishes at the beginning of your turn, and each turn your mana crystals increase by one up to a final maximum of 10.
+                    </li>
+                    <li>
+                        <strong>Your Weapon</strong> 
+                        <br> 
+                        <br>
+                        If you summoned a weapon for your hero, it'll show up to the left of their portrait. Your weapon's durability is reduced by one each time you strike, so you only get a limited number of swings with each. Make 'em count!
+                    </li>
+                    <li>
+                        <strong>A Minion</strong> 
+                        <br> 
+                        <br>
+                        Use minions to attack your opponent or his minions. Many minions have special abilities that give them a unique strategic purpose.
+                    </li>
+                    <li>
+                        <strong>Your Opponent</strong> 
+                        <br> 
+                        <br>
+                        Defeat your opponent to win the game. Clobber him with minions and spells until you bring this hero down to zero!
+                    </li>
+                    <li>
+                        <strong>Your Deck</strong> 
+                        <br> 
+                        <br>
+                        At the beginning of each turn, you draw one card from your deck and add it to your hand. Every deck contains 30 cards; no more, no less.
+                    </li>
+                    <li>
+                        <strong>Turn History</strong> 
+                        <br> 
+                        <br>
+                        The left side of the board displays this detailed summary of the most recent moves. It will surely come in handy for all those "What the hell just happened to my health? And why are all my minions chickens?!?" moments.
+                    </li>
+                </ul>
+                <img src="https://gamepedia.cursecdn.com/hearthstone_gamepedia/thumb/1/1c/Battlefield_-_Goblins_vs_Gnomes.jpg/900px-Battlefield_-_Goblins_vs_Gnomes.jpg?version=17a09427dc7418e9f01e3afcb6596be2" alt="A typical Hearthstone board" id="hearthstone-board-img">
+            </div>
         </section>
 
         <section class="main-section" id="The_Cards">
             <header>
                 <h2>The Cards</h2>
             </header>
-            <code>
+            <div id="card-container">
                 <img src="https://www.hearthstonetopdecks.com/wp-content/uploads/2016/04/aberrant-berserker-300x429.png" alt="A creature card" id="creature-card-img">
                 <img src="https://www.hearthstonetopdecks.com/wp-content/uploads/2018/07/academic-espionage-300x429.png" alt="A spell card" id="spell-card-img">
-            </code>
+            </div>
 
             <div id="card-rules">
                 <p>
@@ -159,62 +188,60 @@
                 Let's finish up by checking out how the first few turns of a typical game of Hearthstone will play out.
             </p>
 
-            <ul>
-                <li>
-                    <code>
-                        <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-01-a663c697115264a0f9e2f9887384945d24353945a2796227f4efda2e45c8c2f7e4fbe3eaa259c9c4901afa63e01873c79de44e3c93cc60e80a8444ebde5df112.jpg" alt="Starting Hand" id="starting-hand-img">
-                    </code>
-                    <h4>Pick your Starting Hand</h4>
+            <div class="turn-phase-container">
+                <div class="turn-phase-description">
+                    <h3>Pick your Starting Hand</h3>
                     <p>
-                        The match begins with a coin toss to determine who goes first, followed by both players drawing their starting hands: three cards for the coin toss winner, four for the other player. Ane because going first does offer a slight strategic advantage, the loser of the coin toss also gets The Coin: a special zero cost card that temporarily increases your mana by one! You can mulligan as many cards from your starting hands as you like. Once both players accept their hand, the match proper begins.
+                        The match begins with a coin toss to determine who goes first, followed by both players drawing their starting hands: three cards for the coin toss winner, four for the other player. And because going first does offer a slight strategic advantage, the loser of the coin toss also gets The Coin: a special zero cost card that temporarily increases your mana by one! You can mulligan as many cards from your starting hands as you like. Once both players accept their hand, the match proper begins.
                     </p>
-                </li>
-                <li>
-                    <code>
-                        <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-02-b9b2facbbd52dfd41b7e3f15ed60e31bedb60610f3cd5ee694f0a2db2a3f4c0c7f0adc29551af185e22f4941dfe616c64edd8f256ae6467ac4a3f0b9929c2950.jpg" alt="Draw a Card" id="draw-card-img">
-                    </code>
-                    <h4>Draw a Card</h4>
+                </div>
+                    <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-01-a663c697115264a0f9e2f9887384945d24353945a2796227f4efda2e45c8c2f7e4fbe3eaa259c9c4901afa63e01873c79de44e3c93cc60e80a8444ebde5df112.jpg" alt="Starting Hand" id="starting-hand-img">
+            </div>
+            <div class="turn-phase-container">
+                <div class="turn-phase-description">
+                    <h3>Draw a Card</h3>
                     <p>
                         You draw a card from your deck at the start of each turn, and some cards allow you to draw additional cards during your turn.
                     </p>
-                </li>
-                <li>
-                    <code>
-                        <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-03-de417dedc23668962d4415c6a78882c9946b87afb0f5db0c3e7bab750ae3e85740ce847e89bb2b8439b44e46a2912a58ee4268d7b1919582d498e074db7fdd90.jpg" alt="Play Cards" id="play-cards-img">
-                    </code>
-                    <h4>Play Cards</h4>
+                </div>
+                <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-02-b9b2facbbd52dfd41b7e3f15ed60e31bedb60610f3cd5ee694f0a2db2a3f4c0c7f0adc29551af185e22f4941dfe616c64edd8f256ae6467ac4a3f0b9929c2950.jpg" alt="Draw a Card" id="draw-card-img">
+            </div>
+            <div class="turn-phase-container">
+                <div class="turn-phase-description">
+                    <h3>Play Cards</h3>
                     <p>
                         One mana crystal isn't much, but there are plenty of low cost cards you can play during your first turn. Like this Argent Squire for example. Minions can't attack the turn they are played unless they have the Charge ability, so the squire is taking a nap until it's her turn to act.
                     </p>
-                </li>
-                <li>
-                    <code>
-                        <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-04-f9864e58a210a3cddfb67ec4e9817fb4c320c39e21987d8d6ca7bd99cb2d9f092969fd33876c23abc6110449dcc1a2c63313a569aa5a6b390ddc5dd7a28c496b.jpg" alt="Attack" id="attack-img">
-                    </code>
-                    <h4>Attack</h4>
+                </div>
+                <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-03-de417dedc23668962d4415c6a78882c9946b87afb0f5db0c3e7bab750ae3e85740ce847e89bb2b8439b44e46a2912a58ee4268d7b1919582d498e074db7fdd90.jpg" alt="Play Cards" id="play-cards-img">
+            </div>
+            <div class="turn-phase-container">
+                <div class="turn-phase-description">
+                    <h3>Attack</h3>
                     <p>
                         Our opponent played a minion, and now it's our turn again. With two mana crystals, we can summon another minion, play a spell, or use our hero power. Decisions, decisions... Our Argent Squire is also ready to attack now; we can attack our opponent, or we can take out his minion. Since our squire has Divine Shield, we could take out the opposing minion without sacrificing our own.
                     </p>
-                </li>
-                <li>
-                    <code>
-                        <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-05-da846a3225f63aaecf7168057f1138dec846837c94a081a7f74fbc8248d47e8c040e585655820358dc2f85f80951cf675ef7eaddc926dfe260453083e0213360.jpg" alt="Use Hero Power" id="hero-power-img">
-                    </code>
-                    <h4>Use your Hero Power</h4>
+                </div>
+                <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-04-f9864e58a210a3cddfb67ec4e9817fb4c320c39e21987d8d6ca7bd99cb2d9f092969fd33876c23abc6110449dcc1a2c63313a569aa5a6b390ddc5dd7a28c496b.jpg" alt="Attack" id="attack-img">
+            </div>
+            <div class="turn-phase-container">
+                <div class="turn-phase-description">
+                    <h3>Use your Hero Power</h3>
                     <p>
                         Rogues can summon daggers, so let's grab a knife and use this weapon to take out our opponent's minion, saving our Squire's shield. Weapon-wielding heroes can target heroes or minions, but watch out: each attack costs one point of durability, and once your weapon runs out of durability, it's discarded for good.
                     </p>
-                </li>
-                <li>
-                    <code>
-                        <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-06-daecae7332ae438d671c8bb6e4da8a96e9ac02f82078b8607fd9b29fe81bdd5d6e884712db319007d3c5615029361cb79b3f28e1eb2c663bcd82467c46082aed.jpg" alt="End Your Turn" id="end-turn-img">
-                    </code>
-                    <h4>End Your Turn</h4>
+                </div>
+                <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-05-da846a3225f63aaecf7168057f1138dec846837c94a081a7f74fbc8248d47e8c040e585655820358dc2f85f80951cf675ef7eaddc926dfe260453083e0213360.jpg" alt="Use Hero Power" id="hero-power-img">
+            </div>
+            <div class="turn-phase-container">
+                <div class="turn-phase-description">
+                    <h3>End Your Turn</h3>
                     <p>
                         Satisfied with our play, we end the turn. Now it’s up to our opponent to find answers to our threats and adapt his tactics. Will he develop his board by playing more minions? Will he focus on removing ours? Will he bide his time until he can spring a deadly combo on us? Turn by turn, each match becomes more challenging, complex, and fun. What will your strategy be?
                     </p>
-                </li>
-            </ul>
+                </div>
+                <img src="https://d2q63o9r0h0ohi.cloudfront.net/images/game-guide/playing-hearthstone/en-us/sequence-06-daecae7332ae438d671c8bb6e4da8a96e9ac02f82078b8607fd9b29fe81bdd5d6e884712db319007d3c5615029361cb79b3f28e1eb2c663bcd82467c46082aed.jpg" alt="End Your Turn" id="end-turn-img">
+            </div>
         </section>
     </main>
 </body>
